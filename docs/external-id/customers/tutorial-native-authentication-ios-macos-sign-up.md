@@ -141,7 +141,7 @@ To sign up a user, you need to:
 
 ## Collect user attributes during sign-up
 
-Whether you sign up a user using email one-time passcode or username (email) and password, you can collect user attributes before a user's account is created.  The `signUp(username:attributes:delegate)` method, accepts attributes as a parameter.
+Whether you sign up a user using email one-time passcode or username (email) and password, you can collect user attributes before a user's account is created.  The `signUp(parameters:delegate)` method can be called using a `MSALNativeAuthSignUpParameters` which has an attributes property.
 
 1. To collect user attributes, use the following code snippet:
 
